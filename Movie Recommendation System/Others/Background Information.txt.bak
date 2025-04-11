@@ -1,0 +1,13 @@
+1] Type of Recommendation Systems
+
+1) Contend based - (based on content similarities)On the bases of similarities of contents (similar Tags)
+2) Collaborative Filtering - (based of user similarities)(Eg FaceBook) Eg. there are two person A and B , both watch an certain movie and they give rating to that movie , by the raiting we can say that A & B have similar taste for the movies and if A watch another movie he /she like it then system will recommand that movie to B. 
+3) Hybrid - 
+
+
+2] Project Flow
+
+DATA -----> Preprocessing ----> Model ----> Website ----> Deploy
+				(1) 			 (2) 		  (3) 			(4) 
+				
+
