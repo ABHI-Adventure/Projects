@@ -63,7 +63,8 @@ if st.button("Explain"):
 # Footer
 st.write("---")
 
-st.write("Powered by LangChain, Hugging Face, and Streamlit. Model: DialoGPT-medium (free and open-source).")
+st.write("Powered by LangChain, Hugging Face, and Streamlit. ")
+
 
 
 
