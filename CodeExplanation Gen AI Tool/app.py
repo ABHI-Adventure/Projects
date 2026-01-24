@@ -8,7 +8,7 @@ from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 llm = HuggingFaceEndpoint(
     repo_id="Qwen/Qwen3-Coder-480B-A35B-Instruct",  # A free conversational model; for code-specific, consider "Salesforce/codegen-350M-mono" if available
     task="text-generation",
-    huggingfacehub_api_token = HUGGINGFACE_API_KEY,
+    huggingfacehub_api_token = "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",
 )
 
 chat_model = ChatHuggingFace(llm=llm)
@@ -62,4 +62,5 @@ if st.button("Explain"):
 st.write("---")
 
 st.write("Powered by LangChain, Hugging Face, and Streamlit. Model: DialoGPT-medium (free and open-source).")
+
 
