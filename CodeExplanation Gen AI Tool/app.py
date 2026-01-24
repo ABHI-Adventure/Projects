@@ -5,10 +5,10 @@ import os
 HF_TOKEN = os.getenv("Hugging_Face_API_Token")
 
 # Set up the Hugging Face model using LangChain
-# Using a free, open-source model suitable for code explanation (e.g., a small code-aware model)
+# Using a free, open-source model suitable for code explanation 
 # Note: You can replace the repo_id with another free model if needed, but this one is lightweight and works for basic explanations.
 llm = HuggingFaceEndpoint(
-    repo_id="Qwen/Qwen3-Coder-480B-A35B-Instruct",  # A free conversational model; for code-specific, consider "Salesforce/codegen-350M-mono" if available
+    repo_id="Qwen/Qwen3-Coder-480B-A35B-Instruct",  # A free conversational model
     task="text-generation",
     huggingfacehub_api_token = HF_TOKEN,
 )
@@ -64,6 +64,7 @@ if st.button("Explain"):
 st.write("---")
 
 st.write("Powered by LangChain, Hugging Face, and Streamlit. ")
+
 
 
 
