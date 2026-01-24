@@ -1,6 +1,8 @@
 import streamlit as st
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+import os
 
+HF_TOKEN = os.getenv("Hugging_Face_API_Token")
 
 # Set up the Hugging Face model using LangChain
 # Using a free, open-source model suitable for code explanation (e.g., a small code-aware model)
@@ -8,7 +10,7 @@ from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 llm = HuggingFaceEndpoint(
     repo_id="Qwen/Qwen3-Coder-480B-A35B-Instruct",  # A free conversational model; for code-specific, consider "Salesforce/codegen-350M-mono" if available
     task="text-generation",
-    huggingfacehub_api_token = Hugging_Face_API_Token,
+    huggingfacehub_api_token = HF_TOKEN,
 )
 
 chat_model = ChatHuggingFace(llm=llm)
@@ -62,6 +64,7 @@ if st.button("Explain"):
 st.write("---")
 
 st.write("Powered by LangChain, Hugging Face, and Streamlit. Model: DialoGPT-medium (free and open-source).")
+
 
 
 
