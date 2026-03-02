@@ -1,7 +1,0 @@
-streamlit
-langchain-core
-langchain-huggingface
-huggingface-hub
-pandas
-numpy
-
