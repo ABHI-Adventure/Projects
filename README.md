@@ -10,7 +10,7 @@ Instead of managing separate projects individually, all projects are organized a
 
 ## 🏗️ Project Structure
 
-```
+```id="a9xk2m"
 root/
 │
 ├── frontend/
@@ -36,8 +36,8 @@ root/
 │   │   ├── Code Insight
 │   │   └── Movie Recommendation System
 │   │
-│   ├── requirnments.txt
-│   └── app.py
+│   ├── app.py
+│   └── requirements.txt
 │
 └── README.md
 ```
@@ -86,21 +86,59 @@ root/
 
 ## 🔐 Environment Setup (Important)
 
-For **Code Insight (Backend)**, you must create a `.env` file and add your Hugging Face token.
+### 🔹 Code Insight (Backend)
 
-### 📍 Location:
+Create a `.env` file:
 
-```
+📍 Location:
+
+```id="8gk4lu"
 backend/projects/Code Insight/.env
 ```
 
-### 📄 Add this inside `.env`:
+Add:
 
-```
+```id="zz6vka"
 HUGGINGFACEHUB_ACCESS_TOKEN="your_access_token"
 ```
 
-⚠️ Replace `"your_access_token"` with your actual Hugging Face access token.
+---
+
+### 🔹 Movie Recommendation System (Backend)
+
+Create a `.env` file:
+
+📍 Location:
+
+```id="y1t6vb"
+backend/projects/Movie Recommendation System/.env
+```
+
+Add:
+
+```id="nq2xq5"
+TMDB_API_KEY="your_api_from_www.themoviedb.org"
+```
+
+👉 This key is used to **fetch and display movie images**
+
+---
+
+## 📥 Important Note (Movie Recommendation System)
+
+The file `similarity.pkl` is **not included in the repository** due to large size.
+
+### 🔽 Download it from:
+
+```id="3c0f4k"
+https://drive.google.com/file/d/1tlgTYyl2gAT4laPesLWab7Bk3LbJ-8nv/view?usp=sharing
+```
+
+### 📍 Place it in:
+
+```id="v9g7dp"
+backend/projects/Movie Recommendation System/
+```
 
 ---
 
@@ -117,7 +155,7 @@ HUGGINGFACEHUB_ACCESS_TOKEN="your_access_token"
 
 ### 1. Clone Repository
 
-```
+```id="j7r3ap"
 git clone <your-repo-link>
 cd <project-folder>
 ```
@@ -126,7 +164,7 @@ cd <project-folder>
 
 **Frontend**
 
-```
+```id="q8z1dk"
 cd frontend
 npm install
 npm start
@@ -134,7 +172,7 @@ npm start
 
 **Backend**
 
-```
+```id="p2x5kc"
 cd backend
 pip install -r requirements.txt
 python app.py
