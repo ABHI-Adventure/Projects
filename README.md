@@ -14,16 +14,30 @@ Instead of managing separate projects individually, all projects are organized a
 root/
 │
 ├── frontend/
-│   └── projects/
-│       ├── HeartDiseasePrediction
-│       ├── CodeInsight
-│       └── MovieRecommendationSystem
+│   ├── public/
+│   │   └── index.html
+│   │
+│   └── src/
+│       ├── components/
+│       │
+│       ├── projects/
+│       │   ├── Heart Disease Prediction
+│       │   ├── Code Insight
+│       │   └── Movie Recommendation System
+│       │
+│       ├── App.js
+│       ├── App.css
+│       ├── index.css
+│       └── index.js
 │
 ├── backend/
-│   └── projects/
-│       ├── Heart Disease Prediction
-│       ├── Code Insight
-│       └── Movie Recommendation System
+│   ├── projects/
+│   │   ├── Heart Disease Prediction
+│   │   ├── Code Insight
+│   │   └── Movie Recommendation System
+│   │
+│   ├── requirnments.txt
+│   └── app.py
 │
 └── README.md
 ```
@@ -59,13 +73,14 @@ root/
 * **Frontend**
 
   * Single UI for all projects
-  * Organized under `projects` folder
-  * User can navigate between different modules
+  * Organized using `components` and `projects` folders
+  * Entry files: `App.js`, `index.js`
 
 * **Backend**
 
   * Centralized backend handling all APIs
   * Each project has its own logic inside `projects` folder
+  * Main entry file: `app.py`
 
 ---
 
