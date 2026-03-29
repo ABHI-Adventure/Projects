@@ -23,7 +23,7 @@ load_dotenv()
 movie_bp = Blueprint("movie", __name__)
 
 movie_df = joblib.load("projects/MovieRecommendationSystem/movies.pkl")
-similarity = joblib.load("projects/MovieRecommendationSystem/similarity.pkl")
+similarity = joblib.load("similarity.pkl")
 
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 
