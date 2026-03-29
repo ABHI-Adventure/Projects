@@ -4,6 +4,18 @@ import requests
 
 from dotenv import load_dotenv
 import os
+import gdown
+
+FILE_ID = "1tlgTYyl2gAT4laPesLWab7Bk3LbJ-8nv"
+URL = f"https://drive.google.com/uc?id={FILE_ID}"
+OUTPUT = "similarity.pkl"
+
+# Download only if not exists
+if not os.path.exists(OUTPUT):
+    print("Downloading similarity.pkl...")
+    gdown.download(URL, OUTPUT, quiet=False)
+
+
 
 load_dotenv()
 
